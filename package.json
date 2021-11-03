@@ -1,6 +1,6 @@
 {
   "name": "terminal-color",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lightweight terminal colors",
   "main": "lib/color.js",
   "repository": "https://github.com/abschill/terminal-color",
