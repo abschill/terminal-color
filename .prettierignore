@@ -1,0 +1,4 @@
+.eslintrc.js
+index.cjs
+lib/**/*
+cjs/**/*

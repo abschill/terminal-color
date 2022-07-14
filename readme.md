@@ -7,8 +7,39 @@ or
 ``` npm install terminal-color```
 
 ```
-const color = require( 'terminal-color' );
-color( 'FgRed', 'Hello World' );
+const { color } = require('terminal-color');
+color.fg.red('Hello World');
 ```
 
-[Color/Style Reference](https://github.com/abschill/terminal-color/blob/master/lib/constants.js)
+## public members
+
+`bg`
+effects background of text
+
+`fg`
+effects foreground of text
+
+## colors
+
+applies to both background and foreground
+
+`black`
+
+`yellow`
+
+`white`
+
+`cyan`
+
+`blue`
+
+`purple`
+
+`red`
+
+`green`
+
+`cyan`
+
+[examples](./examples/index.cjs)
+[full type defs](./cjs/index.d.ts)

@@ -1,0 +1,9 @@
+{
+    "entryPoints": [
+        "./src/index.ts"
+    ],
+    "darkHighlightTheme": "dark-plus",
+    "out": "reference",
+    "includeVersion": true,
+	"excludeInternal": true
+}

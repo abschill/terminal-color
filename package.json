@@ -1,13 +1,31 @@
 {
-  "name": "terminal-color",
-  "version": "0.1.2",
-  "description": "Lightweight terminal colors",
-  "main": "lib/color.js",
-  "repository": "https://github.com/abschill/terminal-color",
-  "author": "abschill",
-  "license": "ISC",
-  "files": [
-       "lib/color.js",
-       "lib/constants.js" 
-   ]
+	"name": "terminal-color",
+	"version": "0.2.0",
+	"description": "Lightweight terminal colors",
+	"main": "cjs/index.js",
+	"repository": "https://github.com/webpuppy/terminal-color",
+	"author": "abschill",
+	"license": "ISC",
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc -w",
+		"run:example": "node examples/index.cjs",
+		"build:docs": "typedoc"
+	},
+	"exports": {
+		".": "./cjs/index.js",
+		"./color": "./cjs/color.js",
+		"./legacy": "./lib/color.js"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.4",
+		"@typescript-eslint/eslint-plugin": "^5.30.3",
+		"@typescript-eslint/parser": "^5.30.3",
+		"eslint": "^8.19.0",
+		"prettier": "^2.7.1",
+		"prettier-eslint": "^15.0.1",
+		"typedoc": "^0.23.7",
+		"typedoc-plugin-markdown": "^3.13.3",
+		"typescript": "^4.7.4"
+	}
 }
